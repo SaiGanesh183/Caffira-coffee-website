@@ -1,0 +1,716 @@
+* {
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    background-color: rgb(216 163 168);
+    overflow-x: hidden;
+}
+
+main {
+   
+    padding-bottom: 2rem;
+
+background-color:  #3a0d0d;
+
+
+  padding: 2rem 0;
+  
+}
+
+
+
+
+nav ul li a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(247, 60, 60);
+}
+
+.Caffira-logo {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+nav {
+
+    max-width: 1200px;
+    margin: -2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+
+}
+.caffiraname {
+    color: #e78f8ff3;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.hero {
+    background-image:url(assets/gallery2.avif);
+    background-size: cover;
+       position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1250px;
+    width: 90vw;
+    height: 75vh;
+    background-color: rgb(43 11 14);
+    margin: 2em auto;
+    border: 2px solid rgb(81, 79, 79);
+    border-radius: 25px 150px;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    border-radius: 25px 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background-color: rgba(14, 13, 13, 0.675);
+} 
+
+.heroblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-coffee {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    min-width: 220px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.3px;
+}
+.hero-content h2 {
+    font-size: 30px;
+        font-family: 'Roboto',sans-serif;
+
+}
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+@media (max-width: 923px) {
+    .hero {
+        height: auto;
+        min-height: 400px;
+        padding: 2rem 0.5rem;
+    }
+    .heroblock {
+        gap: 2rem;
+        width: 98%;
+        max-width: 700px;
+    }
+    .hero-coffee {
+        max-width: 300px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-content h2 {
+        font-size: 24px;
+    }
+    .hero-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 720px) {
+    .heroblock {
+        gap: 1.2rem;
+        max-width: 98vw;
+    }
+    .hero-coffee {
+        max-width: 220px;
+    }
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-content h2 {
+        font-size: 20px;
+    }
+    .hero-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+     .menu-container {
+        grid-template-columns: 1fr;
+        margin-left: 2rem; 
+        gap: 2.8rem;
+    }
+    .hero, .overlay {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1.2rem 0.2rem;
+        height: auto;
+        min-height: 400px;
+        width: 98vw;
+        border-radius: 25px 100px;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .heroblock {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.2rem;
+        width: 98vw;
+        max-width: 98vw;
+        margin: 15px auto;
+    }
+    .hero-coffee {
+        max-width: 180px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .hero-content {
+        text-align: center;
+        min-width: 0;
+        max-width: 98vw;
+    }
+    .hero-content h1 {
+        font-size: 22px;
+    }
+    .hero-content h2 {
+        font-size: 16px;
+    }
+    .hero-content p {
+        font-size: 13px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+.caffiraname {
+    font-family: lobster;
+    letter-spacing: 2px;
+
+}
+
+.caffiraname {
+
+    text-shadow: 0 0 8px rgba(33, 21, 3, 0.314);
+
+}
+
+.hero-content p {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #f4f2f2;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px;
+
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+
+}
+
+.btn-primary {
+   background-color: rgb(153 41 41);
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(239, 230, 230);
+    padding: 8px 13px;
+    border: 1px solid rgb(86, 84, 84);
+    border-radius: 40px 40px 40px 40px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    color: black;
+    background-color: rgb(186, 39, 39);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    transition: 0.43s ease-in-out;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(239, 230, 230);
+    padding: 8px 13px;
+    border: 1px solid white;
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+.hero-content {
+    animation: animation1 2.5s ease-out 0.25s 1 normal forwards;
+}
+
+@keyframes animation1 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:720px) {
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .Caffira-logo {
+        width: 120px;
+        height: 96px;
+    }
+
+    nav {
+        margin-top: -15px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 10px 24px;
+    }
+
+    .hero .overlay {
+        border-radius: 20px 120px;
+    }
+
+}
+
+.menu {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.menu-container {
+    max-width: 1200px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 1.2rem;
+    margin: 2rem auto;
+    animation: animation1 2.5s ease-out 0.25s 1 normal forwards;
+    padding-left: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu-card {
+
+    border-radius: 8px;
+    padding: 15px;
+    width: 80%;
+    background-color: #bf6464;
+    box-shadow: -2px -5px 11px 7px rgb(0 0 0 / 28%);
+
+
+}
+
+.menu-card img {
+    width: 100%;
+
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.coffee-name {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: whitesmoke;
+    margin: 10px 0;
+}
+
+.coffee-description {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.lower-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.menu-btn {
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: white;
+    padding: 8px 12px;
+    background-color: rgb(153, 49, 49);
+    border-radius: 6px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.heading-2 {
+    font-family: Satisfy;
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(45 12 12);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    animation: animation1 2.5s ease-out 0.25s 1 normal forwards;
+}
+
+@media (max-width:922px) {
+    .menu-container  {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+        margin-left: 2.7rem;
+        gap: 2.8rem;
+    }
+}
+
+.about-container {
+    max-width: 1200px;
+    width: 90vw;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.About-us {
+    background-image: url(assets/aboutus-bg.jpeg);
+    background-size: cover;
+    filter: brightness(0.9);
+
+
+
+
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.aboutus-img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 3px rgb(255, 255, 255);
+
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.heading-3 {
+    font-family: Satisfy;
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(255 176 176);
+    text-align: center;
+
+}
+
+
+.About-us p {
+    font-family: Emilys Candy;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 300;
+    text-wrap: wrap;
+    text-overflow: hide;
+    padding-right: 10px;
+
+
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+
+.line2 {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+about-btn {
+    margin: 20px auto;
+}
+
+@media (max-width:620px) {
+    .about-container {
+
+        flex-direction: column;
+    }
+
+
+}
+.galleryheading {
+       font-family: Satisfy;
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(54, 0, 0);
+    text-align: center;
+    margin-top: 2rem;
+
+}
+.gallerycard {
+    height: 300px;
+border-radius: 20px;
+
+
+    border: 1px solid transparent;
+       box-shadow: -2px -5px 11px 7px rgb(0 0 0 / 28%);
+    
+   
+}
+.gallerycard img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+        border-radius: 20px;
+      
+
+
+}
+.gallerycontainer {
+    max-width: 1200px;
+    width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    padding: 0 1.2rem;
+ 
+}
+@media (max-width:922px) {
+    .gallerycontainer {
+        grid-template-columns: 1fr 1fr;
+      
+
+    }
+}
+
+@media (max-width:500px) {
+    .gallerycontainer {
+        grid-template-columns: 1fr;
+        
+    }
+}
+.contactuscontainer {
+    max-width: 1300px;
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 1rem;
+
+}    
+.location, .email, .phone {
+    display: flex;
+gap: 15px;
+    align-items: center;
+}
+.contactuscontainer1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+      padding: 0.6rem 1rem;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.contactus {
+    color: white;
+    padding: 2rem 0;
+   background-color: #330707;
+   
+}
+.line-2 {
+     margin-top: 5rem;
+      width: 100%;
+    height: 4px;
+    background-color: rgb(212, 212, 212);
+}
+.heading-contact {
+    font-family: Satisfy;
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(255 176 176);
+  
+    text-align: center;
+}
+.contactuscontainer1 p {
+    font: 1.1em sans-serif;
+
+}
+.contactuscontainer1 img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.contactus div {
+        margin-bottom: 16px;
+}
+.contactus a {
+    color: #ffffff;
+}
+.contactuscontainer2  {
+    max-width: 500px;
+    width: 100%;
+    padding: 0.6rem 0.5rem;
+
+    box-sizing: border-box;
+    
+}
+.contactuscontainer2 input {
+    padding: 0.6rem 0.5rem;
+}
+.contactuscontainer2 textarea::placeholder {
+margin-top: 0.5rem;
+margin-left: 0.5rem;
+}
+
+.contact-btn {
+        background-color: rgb(153 41 41);
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(239, 230, 230);
+    padding: 8px 13px;
+    border: 1px solid rgb(86, 84, 84);
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+@media (max-width:922px) {
+    .contactuscontainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
